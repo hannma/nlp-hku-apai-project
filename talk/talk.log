@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.3)  24 APR 2022 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.3)  26 APR 2022 13:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -957,26 +957,41 @@ Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_result_box=\box137
 \l__siunitx_table_number_align_skip=\skip86
 \l__siunitx_table_text_align_skip=\skip87
-)
-\symstmry=\mathgroup9
-LaTeX Font Info:    Redeclaring math symbol \otimes on input line 112.
-LaTeX Font Info:    Redeclaring math symbol \ominus on input line 113.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks59
 \minrowclearance=\skip88
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen359
+\TX@old@table=\dimen360
+\TX@old@col=\dimen361
+\TX@target=\dimen362
+\TX@delta=\dimen363
+\TX@cols=\count402
+\TX@ftn=\toks60
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\symstmry=\mathgroup9
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 130.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 131.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
-\l__sn_x_dim=\dimen359
-\l__sn_y_dim=\dimen360
-\l__sn_xa_dim=\dimen361
-\l__sn_ya_dim=\dimen362
+\l__sn_x_dim=\dimen364
+\l__sn_y_dim=\dimen365
+\l__sn_xa_dim=\dimen366
+\l__sn_ya_dim=\dimen367
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen363
+\arrowsize=\dimen368
 )) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
@@ -1030,25 +1045,25 @@ File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))
-LaTeX Font Info:    Redeclaring symbol font `stmry' on input line 316.
+LaTeX Font Info:    Redeclaring symbol font `stmry' on input line 334.
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `normal'
-(Font)                  U/stmry/m/n --> U/stmry/m/n on input line 316.
+(Font)                  U/stmry/m/n --> U/stmry/m/n on input line 334.
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
-(Font)                  U/stmry/m/n --> U/stmry/m/n on input line 316.
-LaTeX Font Info:    Redeclaring math symbol \leftarrowtriangle on input line 317.
-LaTeX Font Info:    Redeclaring math symbol \rightarrowtriangle on input line 318.
-LaTeX Font Info:    Redeclaring math symbol \sslash on input line 319.
-LaTeX Font Info:    Redeclaring math symbol \obar on input line 320.
-LaTeX Font Info:    Redeclaring math symbol \otimes on input line 321.
-LaTeX Font Info:    Redeclaring math symbol \ominus on input line 322.
-LaTeX Font Info:    Redeclaring math symbol \minuso on input line 323.
+(Font)                  U/stmry/m/n --> U/stmry/m/n on input line 334.
+LaTeX Font Info:    Redeclaring math symbol \leftarrowtriangle on input line 335.
+LaTeX Font Info:    Redeclaring math symbol \rightarrowtriangle on input line 336.
+LaTeX Font Info:    Redeclaring math symbol \sslash on input line 337.
+LaTeX Font Info:    Redeclaring math symbol \obar on input line 338.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 339.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 340.
+LaTeX Font Info:    Redeclaring math symbol \minuso on input line 341.
  (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.groupplots.code.tex
-\pgfplots@group@current@plot=\count402
-\pgfplots@group@current@row=\count403
-\pgfplots@group@current@column=\count404
+\pgfplots@group@current@plot=\count403
+\pgfplots@group@current@row=\count404
+\pgfplots@group@current@column=\count405
 )
-LaTeX Info: Redefining \cmark on input line 372.
-LaTeX Info: Redefining \xmark on input line 377.
+LaTeX Info: Redefining \cmark on input line 390.
+LaTeX Info: Redefining \xmark on input line 395.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 2019/07/22 v5.05 eXternal References (DPC)
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -1063,13 +1078,13 @@ Package cleveref Info: `algorithmicx' support loaded on input line 3120.
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
-\BKM@id=\count405
+\BKM@id=\count406
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip89
 \bibsep=\skip90
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count406
+\c@NAT@ctr=\count407
 ))
 \figH=\skip91
 \figW=\skip92
@@ -1083,30 +1098,30 @@ LaTeX Warning: Label `tbl:timeline@cref' multiply defined.
 )
 \openout1 = `talk.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 20.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 10.0pt on input line 20.
+(Font)              scaled to size 10.0pt on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1144,17 +1159,17 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count407
-\scratchdimen=\dimen364
+\scratchcounter=\count408
+\scratchdimen=\dimen369
 \scratchbox=\box160
-\nofMPsegments=\count408
-\nofMParguments=\count409
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count410
-\MPscratchDim=\dimen365
-\MPnumerator=\count411
-\makeMPintoPDFobject=\count412
-\everyMPtoPDFconversion=\toks61
+\nofMPsegments=\count409
+\nofMParguments=\count410
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count411
+\MPscratchDim=\dimen370
+\MPnumerator=\count412
+\makeMPintoPDFobject=\count413
+\everyMPtoPDFconversion=\toks62
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1162,7 +1177,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box161
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1170,11 +1185,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count413
+\c@section@level=\count414
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1188,14 +1203,14 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \microtypecontext on input line 20.
+LaTeX Info: Redefining \microtypecontext on input line 23.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 20.
+LaTeX Info: Redefining \showhyphens on input line 23.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1206,8 +1221,8 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/usr/local/texlive/2020/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
-\c@mv@tabular=\count414
-\c@mv@boldtabular=\count415
+\c@mv@tabular=\count415
+\c@mv@boldtabular=\count416
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
@@ -1218,25 +1233,25 @@ Package caption Info: End \AtBeginDocument code.
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (/Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/talk.nav)
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 20.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 5.0pt on input line 20.
+(Font)              scaled to size 5.0pt on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 20.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 23.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1247,37 +1262,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 14.4pt on input line 63.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 14.4pt on input line 63.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 17.28pt on input line 63.
+(Font)              scaled to size 17.28pt on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 12.0pt on input line 63.
+(Font)              scaled to size 12.0pt on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 12.0pt on input line 63.
+(Font)              scaled to size 12.0pt on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 63.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 7.0pt on input line 63.
-LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input line 63.
+(Font)              scaled to size 7.0pt on input line 66.
+LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
 File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/lc/n' aliased to
-(Font)              `TS1/Roboto-LF/lightcondensed/n' on input line 63.
+(Font)              `TS1/Roboto-LF/lightcondensed/n' on input line 66.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 12.0pt on input line 63.
+(Font)              scaled to size 12.0pt on input line 66.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1285,63 +1300,63 @@ Package microtype Info: Loading generic protrusion settings for font family
 <assets/hku-logo.png, id=40, 321.2pt x 157.58875pt>
 File: assets/hku-logo.png Graphic file (type png)
 <use assets/hku-logo.png>
-Package pdftex.def Info: assets/hku-logo.png  used on input line 63.
+Package pdftex.def Info: assets/hku-logo.png  used on input line 66.
 (pdftex.def)             Requested size: 102.7861pt x 50.42941pt.
 <assets/logo_TU_169_0.pdf, id=41, 454.59035pt x 60.5733pt>
 File: assets/logo_TU_169_0.pdf Graphic file (type pdf)
 <use assets/logo_TU_169_0.pdf>
-Package pdftex.def Info: assets/logo_TU_169_0.pdf  used on input line 63.
+Package pdftex.def Info: assets/logo_TU_169_0.pdf  used on input line 66.
 (pdftex.def)             Requested size: 455.01483pt x 60.63321pt.
 
-Overfull \hbox (1.26375pt too wide) detected at line 63
+Overfull \hbox (1.26375pt too wide) detected at line 66
 [] [] 
  []
 
 
-Overfull \vbox (29.49847pt too high) detected at line 63
+Overfull \vbox (29.49847pt too high) detected at line 66
  []
 
 <assets/hku-white.png, id=42, 1490.56876pt x 287.0725pt>
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 63.
+Package pdftex.def Info: assets/hku-white.png  used on input line 66.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-logo.png> </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/logo_TU_169_0.pdf> </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png>]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 100.
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 103.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 10.0pt on input line 100.
+(Font)              scaled to size 10.0pt on input line 103.
 <figures/2DemotionMapping.pdf, id=56, 261.83678pt x 228.76352pt>
 File: figures/2DemotionMapping.pdf Graphic file (type pdf)
 <use figures/2DemotionMapping.pdf>
-Package pdftex.def Info: figures/2DemotionMapping.pdf  used on input line 100.
+Package pdftex.def Info: figures/2DemotionMapping.pdf  used on input line 103.
 (pdftex.def)             Requested size: 167.30318pt x 146.17426pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 100.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 103.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 9.0pt on input line 100.
+(Font)              scaled to size 9.0pt on input line 103.
 <figures/differentDatabases.pdf, id=57, 260.78888pt x 53.42119pt>
 File: figures/differentDatabases.pdf Graphic file (type pdf)
 <use figures/differentDatabases.pdf>
-Package pdftex.def Info: figures/differentDatabases.pdf  used on input line 100.
+Package pdftex.def Info: figures/differentDatabases.pdf  used on input line 103.
 (pdftex.def)             Requested size: 199.1693pt x 40.7994pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 100.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 103.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 8.0pt on input line 100.
+(Font)              scaled to size 8.0pt on input line 103.
 
-Overfull \vbox (38.80545pt too high) detected at line 100
+Overfull \vbox (38.80545pt too high) detected at line 103
  []
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 100.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 103.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 4.0pt on input line 100.
+(Font)              scaled to size 4.0pt on input line 103.
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 100.
+Package pdftex.def Info: assets/hku-white.png  used on input line 103.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
 [2
 
@@ -1352,104 +1367,122 @@ pdfTeX warning: pdflatex (file /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_ST
 <figures/EmotionRecognitionSystem.pdf, id=90, 533.6817pt x 126.61383pt>
 File: figures/EmotionRecognitionSystem.pdf Graphic file (type pdf)
 <use figures/EmotionRecognitionSystem.pdf>
-Package pdftex.def Info: figures/EmotionRecognitionSystem.pdf  used on input line 125.
+Package pdftex.def Info: figures/EmotionRecognitionSystem.pdf  used on input line 128.
 (pdftex.def)             Requested size: 398.3386pt x 94.50804pt.
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 125.
+Package pdftex.def Info: assets/hku-white.png  used on input line 128.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
  [3
 
  </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/EmotionRecognitionSystem.pdf>]
-<figures/untr_raw_wave.pdf, id=116, 1011.78pt x 289.08pt>
-File: figures/untr_raw_wave.pdf Graphic file (type pdf)
-<use figures/untr_raw_wave.pdf>
-Package pdftex.def Info: figures/untr_raw_wave.pdf  used on input line 166.
-(pdftex.def)             Requested size: 191.20518pt x 54.63022pt.
-LaTeX Font Info:    Trying to load font information for U+futs on input line 166.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/fourier/ufuts.fd
-File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
-)
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 166.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
+(Font)              scaled to size 9.0pt on input line 166.
 
-LaTeX Font Warning: Font shape `U/futs/lc/n' undefined
-(Font)              using `U/futs/m/n' instead on input line 166.
 
-LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/it' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/it' on input line 166.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/it' will be
-(Font)              scaled to size 10.0pt on input line 166.
+Package natbib Warning: Citation `vogt2008automatic' on page 4 undefined on input line 166.
+
+
+Package natbib Warning: Citation `vogt2008automatic' on page 4 undefined on input line 166.
+
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
 Package pdftex.def Info: assets/hku-white.png  used on input line 166.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
 [4
 
+]
+<figures/untr_raw_wave.pdf, id=121, 1011.78pt x 289.08pt>
+File: figures/untr_raw_wave.pdf Graphic file (type pdf)
+<use figures/untr_raw_wave.pdf>
+Package pdftex.def Info: figures/untr_raw_wave.pdf  used on input line 204.
+(pdftex.def)             Requested size: 191.20518pt x 54.63022pt.
+LaTeX Font Info:    Trying to load font information for U+futs on input line 204.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
+)
+
+LaTeX Font Warning: Font shape `U/futs/lc/n' undefined
+(Font)              using `U/futs/m/n' instead on input line 204.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/it' aliased to
+(Font)              `T1/Roboto-LF/lightcondensed/it' on input line 204.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/it' will be
+(Font)              scaled to size 10.0pt on input line 204.
+File: assets/hku-white.png Graphic file (type png)
+<use assets/hku-white.png>
+Package pdftex.def Info: assets/hku-white.png  used on input line 204.
+(pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
+[5
+
  </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/untr_raw_wave.pdf>]
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 195.
-(pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
- [5
-
-]
-File: assets/hku-white.png Graphic file (type png)
-<use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 276.
+Package pdftex.def Info: assets/hku-white.png  used on input line 233.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
  [6
 
 ]
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 301.
+Package pdftex.def Info: assets/hku-white.png  used on input line 314.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
  [7
 
 ]
-<figures/svm.png, id=179, 334.24875pt x 331.2375pt>
+File: assets/hku-white.png Graphic file (type png)
+<use assets/hku-white.png>
+Package pdftex.def Info: assets/hku-white.png  used on input line 339.
+(pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
+ [8
+
+]
+<figures/svm.png, id=184, 334.24875pt x 331.2375pt>
 File: figures/svm.png Graphic file (type png)
 <use figures/svm.png>
-Package pdftex.def Info: figures/svm.png  used on input line 331.
+Package pdftex.def Info: figures/svm.png  used on input line 369.
 (pdftex.def)             Requested size: 143.4048pt x 142.11597pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/it' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/it' on input line 331.
+(Font)              `T1/Roboto-LF/lightcondensed/it' on input line 369.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/it' will be
-(Font)              scaled to size 9.0pt on input line 331.
+(Font)              scaled to size 9.0pt on input line 369.
 
-Overfull \vbox (5.67216pt too high) detected at line 331
+Overfull \vbox (5.67216pt too high) detected at line 369
  []
 
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 331.
+Package pdftex.def Info: assets/hku-white.png  used on input line 369.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
-[8
+[9
 
  </Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/svm.png>]
-Overfull \hbox (19.38103pt too wide) detected at line 382
+Overfull \hbox (19.38103pt too wide) detected at line 420
 []
  []
 
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 382.
+Package pdftex.def Info: assets/hku-white.png  used on input line 420.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
-[9
+[10
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{tbl:timeline}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.497 }
+l.535 }
        
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 497.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 535.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 17.28pt on input line 497.
+(Font)              scaled to size 17.28pt on input line 535.
 File: assets/hku-white.png Graphic file (type png)
 <use assets/hku-white.png>
-Package pdftex.def Info: assets/hku-white.png  used on input line 497.
+Package pdftex.def Info: assets/hku-white.png  used on input line 535.
 (pdftex.def)             Requested size: 71.13188pt x 13.6974pt.
- [10
+ [11
 
 ]
 \tf@nav=\write6
@@ -1461,11 +1494,15 @@ Package pdftex.def Info: assets/hku-white.png  used on input line 497.
 \tf@snm=\write8
 \openout8 = `talk.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 554.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 554.
- (/Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/talk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 554.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 554.
+
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 592.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 592.
+(/Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/talk.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 592.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 592.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1475,18 +1512,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 46411 strings out of 480906
- 1101768 string characters out of 5908284
- 1538756 words of memory out of 5000000
- 61014 multiletter control sequences out of 15000+600000
- 626373 words of font info for 119 fonts, out of 8000000 for 9000
+ 46668 strings out of 480906
+ 1107550 string characters out of 5908284
+ 1633861 words of memory out of 5000000
+ 61253 multiletter control sequences out of 15000+600000
+ 631556 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,17n,139p,846b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/google/roboto/RobotoCondensed-Bold.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/google/roboto/RobotoCondensed-Light.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/google/roboto/RobotoCondensed-LightItalic.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-orns.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/talk.pdf" (10 pages, 859243 bytes).
+Output written on "/Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/talk.pdf" (11 pages, 861835 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 21695 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 22207 words of extra memory for PDF output out of 24883 (max. 10000000)
 

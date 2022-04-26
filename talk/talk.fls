@@ -431,6 +431,14 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
@@ -619,6 +627,35 @@ INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/f
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/EmotionRecognitionSystem.pdf
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/google/roboto/RobotoCondensed-Bold-lf-t1.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary6.tfm
+INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
+INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/google/roboto/RobotoCondensed-Bold-lf-t1.vf
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/google/roboto/RobotoCondensed-Bold-lf-t1--base.tfm
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/untr_raw_wave.pdf
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/untr_raw_wave.pdf
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/figures/untr_raw_wave.pdf
@@ -651,30 +688,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/google/roboto/RobotoCondensed-
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/google/roboto/RobotoCondensed-LightItalic-lf-t1--base.tfm
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary9.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary6.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/fourier/futrorn.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/google/roboto/RobotoCondensed-Light-lf-t1.tfm
 INPUT /Users/hanna/Documents/Uni/ss2022-hku/APAI4011_STAT4011 NLP/project/talk/assets/hku-white.png

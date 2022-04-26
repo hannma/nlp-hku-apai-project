@@ -91,6 +91,24 @@
 \usepackage{siunitx}
 
 
+%% special table with highlighted gray rows
+
+% copied from baayen report
+\usepackage{array}
+%
+\usepackage{colortbl}
+\usepackage{tabularx}
+%
+\usepackage{lipsum}
+\usepackage{setspace}
+% adjust lines in table
+\usepackage{booktabs}
+%\usepackage[usenames]{color}
+\definecolor{tblhead}{RGB}{242, 242, 242}
+\usepackage{xcolor}
+\newcommand{\mathds}[1]{\text{\usefont{U}{dsrom}{m}{n}#1}}
+% end copied from baayen report
+
 % Notes and Annotations
 % \usepackage[prependcaption,textsize=small,color=gray!40]{todonotes} %option: disable
 

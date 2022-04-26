@@ -1,7 +1,10 @@
 \documentclass[10pt,usepdftitle=false,aspectratio=169]{beamer}
 
+
+
 % Preamble
 \input{preamble_talk}
+
 
 % Tikz
 \usetikzlibrary{external}
@@ -125,7 +128,42 @@
 \end{frame}
 
 
+%%%%%%%%%%%%%%%% Speech basics  %%%%%%%%%%%%%%%%
 
+\begin{frame}\frametitle{Emotions}
+    \framesubtitle{How are you feeling?}
+    
+
+
+\vspace{2em}
+
+\vspace{1em}
+	\emph{Acoustic Properties in Speech:}
+
+	\small
+	\begin{table}
+		%\tablepreamble
+		\newcolumntype{Y}{>{\centering\arraybackslash}X}
+		\renewcommand{\arraystretch}{1.1}
+		\centering
+		\caption[]{Some variations of acoustic variables observed in relation to emotions, from \cite{vogt2008automatic}.}
+		
+		\begin{tabularx}{\textwidth}{YYYYY}
+			\toprule
+			\textbf{Emotion}&  \textbf{Pitch} &  \textbf{Intensity} &  \textbf{Speaking Rate}&\textbf{Voice Qualtiy}  \\
+			\midrule
+			\rowcolor{tblhead}
+			Anger & high mean, wide range& increased& increased &breathy; blaring timbre \\
+			Joy & increased mean and range & increased &increased &sometimes breathy; moderately blaring timbre\\
+			\rowcolor{tblhead}
+			Sadness & normal or lower than normal mean, narrow range & decreased & slow& resonant timbre  \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
+	
+
+\end{frame}
 
 
 
