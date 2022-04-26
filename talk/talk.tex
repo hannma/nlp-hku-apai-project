@@ -1,0 +1,554 @@
+\documentclass[10pt,usepdftitle=false,aspectratio=169]{beamer}
+
+% Preamble
+\input{preamble_talk}
+
+% Tikz
+\usetikzlibrary{external}
+\tikzexternalize[mode=list and make]
+% use  make -j 8 -f talk.makefile to compile with 8 parallel threads (this is what it takes to max out the machine, despite it having 4 cores)
+\tikzset{external/force remake=false}
+\tikzsetexternalprefix{figures/external/}
+
+% Plot dimensions
+\newlength\figH
+\newlength\figW
+\setlength{\figH}{5cm}
+\setlength{\figW}{8cm}
+
+
+\begin{document}
+
+\tikzexternaldisable
+\begin{frame}
+  \vspace{2em}
+  \title{{\bf \LARGE \textbf{Text Classification and Information Retrieval}}}
+
+  \author{\large \textbf{Automatic Recognition of Emotions from Recorded Speech Data}}
+  \date{\large  \textbullet\ Final Project \quad \textbullet \ Hanna M. Dettki	 \quad \textbullet	\ April 28, 2022}
+  \maketitle 
+  \begin{center}
+	\includegraphics[scale=.32]{assets/hku-logo.png} 
+  \end{center}
+
+
+%   \begin{columns} 
+%     \column{0.4\textwidth}
+%     \includegraphics[width=\textwidth]{assets/UT_WBMW_Rot_RGB.pdf}
+%     \column{.4\textwidth}
+%     \includegraphics[width=.8\textwidth]{assets/MPI-IS-WortBildMarke.png}\\
+%     \vspace{-1em}
+%     \hspace{6ex} \parbox[c]{.1\textwidth}{\includegraphics[height=.5cm]{assets/imprs-is-logo.png}}\\
+%     \parbox[c]{.2\textwidth}{\centering\includegraphics[height=1.2cm]{assets/ERC.png}} \,
+%     \parbox{.75\textwidth}{\scriptsize \color{ERC_ora}some of the presented work is supported\newline by the European Research Council.}
+%     %\vspace{-1em}
+%   \end{columns}
+
+  \thispagestyle{empty}
+  \setcounter{framenumber}{0}
+
+  %%%%%%%%%%%%%%%% ANIMATED LOGO %%%%%%%%%%%%%%%%
+%  \tikzifexternalizing{}{%
+%  \begin{tikzpicture}[remember picture,overlay]
+%  \node[anchor=south,yshift=-5mm] at (current page.south) 
+%  {\animategraphics[width=0.9995\paperwidth,autoplay,loop]{36}{assets/logo_TU_169_}{0}{39}};
+%    \end{tikzpicture}%
+%  }%
+  % if you don't like the animation or it doesn't work for you, use this here instead:
+  \begin{columns}
+  \includegraphics[width=0.9995\paperwidth]{assets/logo_TU_169_0.pdf}
+  \end{columns}
+  %%%%%%%%%%%%%% END OF ANIMATED LOGO %%%%%%%%%%%
+
+\end{frame}
+\tikzexternalenable
+
+\setlength{\figwidth}{.9\textwidth}
+\setlength{\figheight}{.6\textheight}
+
+
+%%%%%%%%%%%%%%%% Intro  %%%%%%%%%%%%%%%%
+
+\begin{frame}\frametitle{Introduction}
+    \framesubtitle{Why Classification of Emotions?}
+    
+\begin{columns}
+	
+	\column{.6\textwidth}
+    
+\emph{Emotions:}
+\begin{figure}
+	\includegraphics[width=.7\textwidth]{figures/2DemotionMapping.pdf}	
+	\caption{A two-dimensional emotion space with an Arousal and a Valence axis. Basic emotions are marked as ellipses within the quadrant. }
+
+\end{figure}
+   
+	%\includegraphics[scale=0.9]{2DemotionMapping.pdf}
+\vspace{2em}
+\column{.5\textwidth}
+\vspace{1em}
+	\emph{Different Databases to classify emotions on:}
+	\vspace{1em}
+	\begin{figure}
+		\includegraphics[width=1.0\textwidth]{figures/differentDatabases.pdf}	
+		\caption{Types of databases used for emotion recognition and their difficulty.}
+	\end{figure}
+
+
+	
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%% Intro  %%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%% Intro  %%%%%%%%%%%%%%%%
+
+\begin{frame}\frametitle{Introduction}
+    \framesubtitle{How to Process Emotions?}
+    
+
+
+\vspace{2em}
+
+\vspace{1em}
+	\emph{Automatic Speech Emotion Recognition System:}
+	\begin{figure}
+	\includegraphics[width=\textwidth]{figures/EmotionRecognitionSystem.pdf}
+	\caption{Overview of speech emotion recognition system.}
+\end{figure}
+
+
+	
+
+\end{frame}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%% Dataset  %%%%%%%%%%%%%%%%
+
+
+\begin{frame}\frametitle{Dataset}
+    \framesubtitle{How did you feel?  \hspace*{30em} \href{https://zenodo.org/record/1188976}{Dataset: https://zenodo.org/record/1188976}}
+    
+    \vspace{1.5em}
+
+
+  
+	\begin{columns}
+		\column{.6\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.8\textwidth]{figures/untr_raw_wave.pdf}
+			\caption{Un-trimmed sound wave of woman saying 'Dogs are sitting by the door.' in an fearful manner. There is still a lot of meaningless silence before and after the woman speaking. }
+			\label{fig:untrimmed sw}
+		\end{figure}
+		\column{.5\textwidth}
+\emph{Dataset}
+\begin{itemize}
+	\item \textit{Ryerson Audio-Visual Database of Emotional Speech and Song} (RAVDESS)
+	\item The RAVDESS database 'is a validated multimodal database of speech and song 
+	\item  24 professional actors and actresses, equally balanced in gender, were recorded phrasing main clauses such as  'Dogs are sitting by the door.' 
+	\item  North American English 
+	\item in one of the following eight emotions: neutral, calm, happy, sad, angry, fearful, disgust, surprised.
+	\item  1440 RAVDESS files used  (audio-only) 
+	
+\end{itemize}
+	\end{columns}
+
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%% Software and Applications %%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Text Preprocssing}
+    \framesubtitle{Turning speech into numbers ...}
+	\begin{columns}
+	
+		\column{.5\textwidth}
+	
+	
+		\emph{Audio Preprocessing ...}
+		
+	
+		
+		
+		
+		
+		%TODO add explanation to equation parts
+		
+		\column{.5\textwidth}
+	
+		\emph{Speech Processing:}
+		
+		
+		
+	
+		\end{columns}
+	\end{frame}
+
+
+
+% %%%%%%%%%%%%%%%% Evaluation Metrics %%%%%%%%%%%%%%%
+%  \begin{frame}\frametitle{Evaluation Metrics}
+%     \framesubtitle{How did the Model perform?}
+
+% 	\begin{columns}
+	
+%  	\column{.5\textwidth}
+	
+% 	\emph{Confusion Matrix:}\\
+% 	{\small The number of correct and incorrect predictions is summarized in a confusion matrix, from which evaluation metrics can be derived.}
+%  	\vspace{-.9em}
+% 	\begin{figure}
+% 		%\includegraphics[scale =.1]{figures/confusion-matrix.pdf}
+% 		\includegraphics[width=.7\textwidth]{figures/confusion-matrix.pdf}
+
+% 		%\caption{Confusion Matrix.}
+% 	\end{figure}
+	
+% 	\vspace{.5em}
+% 	\emph{Evaluation Metrics ...}
+% 	{\small
+% 	\begin{itemize}
+% 		\item accuracy
+% 		\item  recall
+% 		\item precision
+% 		\item F-score.
+% 	  \end{itemize}}
+
+%  	\column{.5\textwidth}
+% 	 \makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+% 	  \small{
+%  	 \emph{Accuracy:} Proportion of correct classifications.
+% 	 %$ \frac{TP + TN}{TP + TN + FP + FN}$\\
+% 	 $ \frac{TP + TN}{\text{Total}}$\\
+% 	 ... does not convey a lot of information on the model's performance.
+% 	 \makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+% 	%\vspace{1em}
+	
+% 	 \emph{Recall(+)} 
+% 	 $ =\frac{TP}{TP + FN}$ \\
+% 	 Proportion of \textit{correct positive} classifications from cases that are \textit{actually positive}. \\
+
+% 	 \vspace{1em}	
+% 	 \emph{Recall(-)} $ = \frac{TN}{TN + FP}$\\
+% 	% Proportion of \textit{correct negative } classifications from cases that are \textit{actually negative}. \\
+% 	 \vspace{1em}	
+% 	 \emph{Precision(+):} 
+% 	 $ \frac{TP}{TP + FP}$ \\
+% 	 Proportion of \textit{correct positive} classifications from cases that are \textit{predicted as positive}. \\
+
+% 	\vspace{1em}	
+%  		\emph{Precision(-):}
+% 	  $  \frac{FN}{FN + TN}$\\
+% 	 % \vspace{1em}	
+
+% 	  \makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+
+% 	  \emph{F-Score:}
+% 	  $F_{\beta} = \frac{(1- \beta^2) \cdot \text{Precision}  \cdot \text{Recall}}{\beta^2 \cdot \text{Precision}  \cdot \text{Recall}}$
+% 	  } \\
+% 	  ... a combination of recall and precision.
+% 	  \makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}\\
+
+
+% 	\end{columns}
+%  \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}\frametitle{Feature Extraction}
+	\framesubtitle{ ... }% \hspace*{38em} [2] \href{https://aipoint.tech}{aipoint.tech}}
+%  \framesubtitle{What was the movie like?  \hspace*{33em} \href{https://www.rottentomatoes.com}{www.rottentomatoes.com}}
+
+	
+	
+	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Text Classification Algorithms}
+    \framesubtitle{(1) Convolutional Neural Network}
+
+	\begin{columns}
+	
+		\column{.7\textwidth}
+		\vspace{2em}
+		\begin{itemize}
+			\item CNNs are a special kind of neural network
+			\item inspired by the concept of the mammalian retina
+			\item have proven to perform well on high-dimensional input 
+			\item use convolution as a specialized kind of linear operation in place of a general matrix multiplication
+			\item Advantageous to CNNs is their high efficiency in terms of  computational complexity while using a sparse set of parameters
+			\item The kernels which the CNN learns during training process, are reused over the entire input which markedly exceeds regular feed forward networks in terms of memory and computational efficiency.
+
+
+		\end{itemize}
+		
+		
+   \column{.3\textwidth}
+
+		\end{columns}
+	\end{frame}
+
+
+%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Classification Algorithms}
+    \framesubtitle{(2) Support Vectore Machine}
+
+	\begin{columns}
+		\vspace{1em}
+		\column{.5\textwidth}
+	
+		\emph{Support Vector machine:}
+		\begin{itemize}
+			\item \textbf{Goal:}  find a hyperplane of the form $\mathcal{H} = \left\lbrace x \in \mathbb{R}^d | \left\langle w,x\right\rangle + b =0 \right\rbrace $ such that it separates the data while maximizing the distance between the hyperplane and the closest data point. 
+			\item This distance is referred to as the margin. 
+			\item By maximizing the margin, the classifier is most robust to noise in new data
+		\end{itemize}
+		\vspace{1em}
+
+\column{.6\textwidth}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/svm.png}
+	\caption{A linear SVM. The circled data points are the \textit{support vectors} -- i.e., the examples that are closest to the decision boundary. The support vectors determine the the margin with which the two classes are separated. In this work, eight classes need to be separated.}
+
+\end{figure}
+		
+		\end{columns}
+	\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Results}
+    \framesubtitle{Who did better?}
+	\begin{columns}
+	
+		\column{.5\textwidth}
+	
+
+
+		
+		\vspace{0.5em}
+	
+\emph{SVM-Model Parameters:}
+		\begin{align*}
+			l = 745 \qquad &\text{(number of principal components of PCA)}\\
+			\gamma_{\text{\tiny PCA}} =  1 \qquad &\text{(inversed kernel width of PCA)}\\
+			C = 10 \qquad &\text{(soft-margin constant of SVM)}\\
+			\gamma_{\text{\tiny SVM}} = 10 \qquad &\text{(inversed kernel width of SVM)}
+			\end{align*}
+
+\vspace{1em}
+		\vspace{.1em}
+		\column{.5\textwidth}
+	
+		\emph{Comparison }
+		%{\small
+		\begin{table}[htbp]
+		  \centering
+		  \label{tbl:timeline}
+		  \begin{tabular}{l c c}
+			\toprule
+			SVM&  Training& Test\\
+			\midrule
+			Accuracy & $ 97.05\%$ & $63.39\%$\\
+			
+		  
+			\bottomrule
+		  \end{tabular}
+		  \caption{Results of evaluating the SVM-model on the training and  test data.}
+		  \end{table}%}
+
+		  $\rightarrow$ %\textbf{LR} ( $F=86.8\%$) outperforms \textbf{NB} ( $F =45.3\%$) 
+		\end{columns}
+
+	
+		
+	\end{frame}
+
+
+	%%%%%%%%%%%%%%%% Bigger picture  %%%%%%%%%%%%%%%%
+
+% \begin{frame}\frametitle{Let's Zoom out ...}
+%     \framesubtitle{Recommender Systems}
+    
+%     \vspace{1.5em}
+    
+%     	\begin{center}
+%     \includegraphics[width=.8\textwidth]{figures/recommender-system.png}	
+% 		\end{center}
+
+% 		\vspace{.5em}
+    
+% 		\begin{center}
+% 			\emph{Objectives from Application's point of view:} \\
+% 			\textbullet	\, maximize revenue \quad \textbullet	\,maximize user's time spent on platform  
+% 		\end{center}
+
+% \end{frame}
+
+% %%%%%%%%%%%%%%%% bigger picture  %%%%%%%%%%%%%%%%
+
+
+% \begin{frame}\frametitle{Bigger Picture }
+%     \framesubtitle{What was your experience like?}
+    
+%     \vspace{1.5em}
+% \begin{columns}
+% 	\column{.8\textwidth}
+    
+%     \includegraphics[width=.95\textwidth]{figures/recommender-system-sentiment-classification.png}	
+	
+
+% 		\vspace{.5em}
+
+% 		\column{.3\textwidth}
+%     	\emph{Sentiment Classification as part of a Recommender System: } \\
+% 		\begin{itemize}
+% 			\item here: based on movie reviews
+% 			\item binary classification
+% 		\end{itemize}
+
+
+% 	\end{columns}
+% \end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% SUMMARY
+
+\blackslidetext{
+	\frametitle{\emph{Summary}}
+	
+	\begin{columns}
+		
+	\column{.5\textwidth}
+\textbf{SVM:}
+\vspace{-.6em}
+	{\small
+	\begin{table}[htbp]
+		\centering
+		\label{tbl:timeline}
+		\begin{tabular}{l c c}
+		  \toprule
+		  SVM&  Training& Test\\
+		  \midrule
+		  Accuracy & $ 97.05\%$ & $63.39\%$\\
+		  
+		
+		  \bottomrule
+		\end{tabular}
+		%\caption{Results of evaluating the SVM-model on the training and  test data.}
+		\end{table}}
+		  \vspace{.6em}
+
+	\textbf{CNN:}\\
+
+	{\small
+	\begin{itemize}
+		\item did not learn the problem at all
+		\item probably training data too small
+		\item $\rightarrow$ was not further pursued
+	\end{itemize}}
+
+
+	
+	\column{.5\textwidth}
+	\vspace{3em}
+	\textbf{Improvements:}
+	\vspace{-3em}
+	{\small
+	\begin{itemize}
+		\item incorporate transcribed text data
+		\item include videos to have facial expressions as additional feature
+		\item using the validation set to find better hyperparameters
+		\item $\rightarrow$ would make a plethora of established  methods used in text processing available.
+\begin{itemize}
+	\item feature extracting with BoW- or tf-idf method
+	\item n-grams to capture context of a word
+\end{itemize}
+	\end{itemize}}
+	\end{columns}
+	\vspace{.5em}
+	\begin{center}
+		\makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+		\LARGE \emph{Thank You!}
+		\makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+	\end{center}
+	
+
+}
+  
+
+
+%%%%%%%%%%%%%%%% HOW TO .... %%%%%%%%%%%%%%%%
+% \begin{frame}\frametitle{How to ...}
+%     \framesubtitle{?}
+
+% 	\makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+	
+% 	\begin{columns}
+	
+% 	\column{.2\textwidth}
+% 	\centering
+% 	\includegraphics[width=0.8\textwidth]{figures/pn_logo.png}
+		
+% 	\column{.75\textwidth}
+% 	\vspace{0.25em}
+	
+% 	{\small \textbf{ProbNum} implements probabilistic numerical methods in Python.
+% 	\begin{center}
+% 	\url{https://github.com/probabilistic-numerics/probnum}
+% 	\end{center}
+% 	or alternatively \colorbox{lgra}{\texttt{pip install probnum}}.
+% 	}
+% 	\vspace{0.25em}
+% 	\end{columns}
+	
+% 	\makebox[\linewidth]{\color{TUgray}{\rule{\textwidth}{2pt}}}
+
+% 	\vspace{1em}
+
+% 	\emph{Future Applications}
+% 	\begin{center}
+%     \begin{tabular}{cc}
+% 	\includegraphics[width=.23\textwidth]{figures/PDE_solution_samples.pdf}
+% 	\includegraphics[width=.15\textwidth]{figures/PDE_fine_solution.pdf} &
+% 	\includegraphics[width=.275\textwidth]{figures/nonconvex_surface.png}\\
+%     Galerkin Methods \(\mA \vu = \vf\)&
+%     Empirical Risk Minimization \(\rmH \vd = \rvg\)
+%     \end{tabular}
+%     \end{center}
+
+% \end{frame}   
+
+%% References
+%\newcounter{references}
+%\setcounter{references}{\value{framenumber}} % Adjust frame counter to not include references
+%
+%\begin{frame}[allowframebreaks]{References}
+%\bibliographystyle{plainnat}
+%\bibliography{references}
+%\end{frame}
+%
+%\setcounter{framenumber}{\value{references}}
+
+
+\end{document}

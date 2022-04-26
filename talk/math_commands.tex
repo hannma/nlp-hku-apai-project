@@ -1,0 +1,527 @@
+%%%%% NEW MATH DEFINITIONS %%%%%
+
+\usepackage{amsmath,amsfonts,bm}
+
+% Mark sections of captions for referring to divisions of figures
+\newcommand{\figleft}{{\em (Left)}}
+\newcommand{\figcenter}{{\em (Center)}}
+\newcommand{\figright}{{\em (Right)}}
+\newcommand{\figtop}{{\em (Top)}}
+\newcommand{\figbottom}{{\em (Bottom)}}
+\newcommand{\captiona}{{\em (a)}}
+\newcommand{\captionb}{{\em (b)}}
+\newcommand{\captionc}{{\em (c)}}
+\newcommand{\captiond}{{\em (d)}}
+
+% Highlight a newly defined term
+\newcommand{\newterm}[1]{{\bf #1}}
+
+
+% Figure reference, lower-case.
+\def\figref#1{figure~\ref{#1}}
+% Figure reference, capital. For start of sentence
+\def\Figref#1{Figure~\ref{#1}}
+\def\twofigref#1#2{figures \ref{#1} and \ref{#2}}
+\def\quadfigref#1#2#3#4{figures \ref{#1}, \ref{#2}, \ref{#3} and \ref{#4}}
+% Section reference, lower-case.
+\def\secref#1{section~\ref{#1}}
+% Section reference, capital.
+\def\Secref#1{Section~\ref{#1}}
+% Reference to two sections.
+\def\twosecrefs#1#2{sections \ref{#1} and \ref{#2}}
+% Reference to three sections.
+\def\secrefs#1#2#3{sections \ref{#1}, \ref{#2} and \ref{#3}}
+% Reference to an equation, lower-case.
+%\def\eqref#1{equation~\ref{#1}}
+% Reference to an equation, upper case
+%\def\Eqref#1{Equation~\ref{#1}}
+% A raw reference to an equation---avoid using if possible
+\def\plaineqref#1{\ref{#1}}
+% Reference to a chapter, lower-case.
+\def\chapref#1{chapter~\ref{#1}}
+% Reference to an equation, upper case.
+\def\Chapref#1{Chapter~\ref{#1}}
+% Reference to a range of chapters
+\def\rangechapref#1#2{chapters\ref{#1}--\ref{#2}}
+% Reference to an algorithm, lower-case.
+\def\algref#1{algorithm~\ref{#1}}
+% Reference to an algorithm, upper case.
+\def\Algref#1{Algorithm~\ref{#1}}
+\def\twoalgref#1#2{algorithms \ref{#1} and \ref{#2}}
+\def\Twoalgref#1#2{Algorithms \ref{#1} and \ref{#2}}
+% Reference to a part, lower case
+\def\partref#1{part~\ref{#1}}
+% Reference to a part, upper case
+\def\Partref#1{Part~\ref{#1}}
+\def\twopartref#1#2{parts \ref{#1} and \ref{#2}}
+
+\def\ceil#1{\lceil #1 \rceil}
+\def\floor#1{\lfloor #1 \rfloor}
+\def\1{\bm{1}}
+\newcommand{\train}{\mathcal{D}}
+\newcommand{\valid}{\mathcal{D_{\mathrm{valid}}}}
+\newcommand{\test}{\mathcal{D_{\mathrm{test}}}}
+
+\def\eps{{\epsilon}}
+
+
+% Random variables
+\def\reta{{\mathsf{$\eta$}}}
+\def\ra{{\mathsf{a}}}
+\def\rb{{\mathsf{b}}}
+\def\rc{{\mathsf{c}}}
+\def\rd{{\mathsf{d}}}
+\def\re{{\mathsf{e}}}
+\def\rf{{\mathsf{f}}}
+\def\rg{{\mathsf{g}}}
+\def\rh{{\mathsf{h}}}
+\def\ri{{\mathsf{i}}}
+\def\rj{{\mathsf{j}}}
+\def\rk{{\mathsf{k}}}
+\def\rl{{\mathsf{l}}}
+% rm is already a command, just don't name any random variables m
+\def\rn{{\mathsf{n}}}
+\def\ro{{\mathsf{o}}}
+\def\rp{{\mathsf{p}}}
+\def\rq{{\mathsf{q}}}
+\def\rr{{\mathsf{r}}}
+\def\rs{{\mathsf{s}}}
+\def\rt{{\mathsf{t}}}
+\def\ru{{\mathsf{u}}}
+\def\rv{{\mathsf{v}}}
+\def\rw{{\mathsf{w}}}
+\def\rx{{\mathsf{x}}}
+\def\ry{{\mathsf{y}}}
+\def\rz{{\mathsf{z}}}
+
+% Random vectors
+\def\rvepsilon{{\bm{\mathsf{\epsilon}}}}
+\def\rvtheta{{\bm{\mathsf{\theta}}}}
+\def\rva{{\bm{\mathsf{a}}}}
+\def\rvb{{\bm{\mathsf{b}}}}
+\def\rvc{{\bm{\mathsf{c}}}}
+\def\rvd{{\bm{\mathsf{d}}}}
+\def\rve{{\bm{\mathsf{e}}}}
+\def\rvf{{\bm{\mathsf{f}}}}
+\def\rvg{{\bm{\mathsf{g}}}}
+\def\rvh{{\bm{\mathsf{h}}}}
+\def\rvu{{\bm{\mathsf{i}}}}
+\def\rvj{{\bm{\mathsf{j}}}}
+\def\rvk{{\bm{\mathsf{k}}}}
+\def\rvl{{\bm{\mathsf{l}}}}
+\def\rvm{{\bm{\mathsf{m}}}}
+\def\rvn{{\bm{\mathsf{n}}}}
+\def\rvo{{\bm{\mathsf{o}}}}
+\def\rvp{{\bm{\mathsf{p}}}}
+\def\rvq{{\bm{\mathsf{q}}}}
+\def\rvr{{\bm{\mathsf{r}}}}
+\def\rvs{{\bm{\mathsf{s}}}}
+\def\rvt{{\bm{\mathsf{t}}}}
+\def\rvu{{\bm{\mathsf{u}}}}
+\def\rvv{{\bm{\mathsf{v}}}}
+\def\rvw{{\bm{\mathsf{w}}}}
+\def\rvx{{\bm{\mathsf{x}}}}
+\def\rvy{{\bm{\mathsf{y}}}}
+\def\rvz{{\bm{\mathsf{z}}}}
+
+% Elements of random vectors
+\def\erva{\bm{\mathsf{a}}}
+\def\ervb{\bm{\mathsf{b}}}
+\def\ervc{\bm{\mathsf{c}}}
+\def\ervd{{\mathsf{d}}}
+\def\erve{{\mathsf{e}}}
+\def\ervf{{\mathsf{f}}}
+\def\ervg{{\mathsf{g}}}
+\def\ervh{{\mathsf{h}}}
+\def\ervi{{\mathsf{i}}}
+\def\ervj{{\mathsf{j}}}
+\def\ervk{{\mathsf{k}}}
+\def\ervl{{\mathsf{l}}}
+\def\ervm{{\mathsf{m}}}
+\def\ervn{{\mathsf{n}}}
+\def\ervo{{\mathsf{o}}}
+\def\ervp{{\mathsf{p}}}
+\def\ervq{{\mathsf{q}}}
+\def\ervr{{\mathsf{r}}}
+\def\ervs{{\mathsf{s}}}
+\def\ervt{{\mathsf{t}}}
+\def\ervu{{\mathsf{u}}}
+\def\ervv{{\mathsf{v}}}
+\def\ervw{{\mathsf{w}}}
+\def\ervx{{\mathsf{x}}}
+\def\ervy{{\mathsf{y}}}
+\def\ervz{{\mathsf{z}}}
+
+% Random matrices
+\def\rmA{{\bm{\mathsf{A}}}}
+\def\rmB{{\bm{\mathsf{B}}}}
+\def\rmC{{\bm{\mathsf{C}}}}
+\def\rmD{{\bm{\mathsf{D}}}}
+\def\rmE{{\bm{\mathsf{E}}}}
+\def\rmF{{\bm{\mathsf{F}}}}
+\def\rmG{{\bm{\mathsf{G}}}}
+\def\rmH{{\bm{\mathsf{H}}}}
+\def\rmI{{\bm{\mathsf{I}}}}
+\def\rmJ{{\bm{\mathsf{J}}}}
+\def\rmK{{\bm{\mathsf{K}}}}
+\def\rmL{{\bm{\mathsf{L}}}}
+\def\rmM{{\bm{\mathsf{M}}}}
+\def\rmN{{\bm{\mathsf{N}}}}
+\def\rmO{{\bm{\mathsf{O}}}}
+\def\rmP{{\bm{\mathsf{P}}}}
+\def\rmQ{{\bm{\mathsf{Q}}}}
+\def\rmR{{\bm{\mathsf{R}}}}
+\def\rmS{{\bm{\mathsf{S}}}}
+\def\rmT{{\bm{\mathsf{T}}}}
+\def\rmU{{\bm{\mathsf{U}}}}
+\def\rmV{{\bm{\mathsf{V}}}}
+\def\rmW{{\bm{\mathsf{W}}}}
+\def\rmX{{\bm{\mathsf{X}}}}
+\def\rmY{{\bm{\mathsf{Y}}}}
+\def\rmZ{{\bm{\mathsf{Z}}}}
+\def\rmBeta{{\bm{\mathsf{\beta}}}}
+\def\rmPi{{\bm{\mathsf{\Pi}}}}
+\def\rmPhi{{\bm{\mathsf{\Phi}}}}
+\def\rmPsi{{\bm{\mathsf{\Psi}}}}
+\def\rmLambda{{\bm{\mathsf{\Lambda}}}}
+\def\rmSigma{{\bm{\mathsf{\Sigma}}}}
+\def\rmDelta{{\bm{\mathsf{\Delta}}}}
+
+% Elements of random matrices
+\def\ermA{{\mathsf{A}}}
+\def\ermB{{\mathsf{B}}}
+\def\ermC{{\mathsf{C}}}
+\def\ermD{{\mathsf{D}}}
+\def\ermE{{\mathsf{E}}}
+\def\ermF{{\mathsf{F}}}
+\def\ermG{{\mathsf{G}}}
+\def\ermH{{\mathsf{H}}}
+\def\ermI{{\mathsf{I}}}
+\def\ermJ{{\mathsf{J}}}
+\def\ermK{{\mathsf{K}}}
+\def\ermL{{\mathsf{L}}}
+\def\ermM{{\mathsf{M}}}
+\def\ermN{{\mathsf{N}}}
+\def\ermO{{\mathsf{O}}}
+\def\ermP{{\mathsf{P}}}
+\def\ermQ{{\mathsf{Q}}}
+\def\ermR{{\mathsf{R}}}
+\def\ermS{{\mathsf{S}}}
+\def\ermT{{\mathsf{T}}}
+\def\ermU{{\mathsf{U}}}
+\def\ermV{{\mathsf{V}}}
+\def\ermW{{\mathsf{W}}}
+\def\ermX{{\mathsf{X}}}
+\def\ermY{{\mathsf{Y}}}
+\def\ermZ{{\mathsf{Z}}}
+
+% Vectors
+\def\vzero{{\bm{0}}}
+\def\vone{{\bm{1}}}
+\def\vmu{{\bm{\mu}}}
+\def\vtheta{{\bm{\theta}}}
+\def\valpha{{\bm{\alpha}}}
+\def\vbeta{{\bm{\beta}}}
+\def\vgamma{{\bm{\gamma}}}
+\def\vlambda{{\bm{\lambda}}}
+\def\vphi{{\bm{\phi}}}
+\def\vpsi{{\bm{\psi}}}
+\def\vxi{{\bm{\xi}}}
+\def\va{{\bm{a}}}
+\def\vb{{\bm{b}}}
+\def\vc{{\bm{c}}}
+\def\vd{{\bm{d}}}
+\def\ve{{\bm{e}}}
+\def\vf{{\bm{f}}}
+\def\vg{{\bm{g}}}
+\def\vh{{\bm{h}}}
+\def\vi{{\bm{i}}}
+\def\vj{{\bm{j}}}
+\def\vk{{\bm{k}}}
+\def\vl{{\bm{l}}}
+\def\vm{{\bm{m}}}
+\def\vn{{\bm{n}}}
+\def\vo{{\bm{o}}}
+\def\vp{{\bm{p}}}
+\def\vq{{\bm{q}}}
+\def\vr{{\bm{r}}}
+\def\vs{{\bm{s}}}
+\def\vt{{\bm{t}}}
+\def\vu{{\bm{u}}}
+\def\vv{{\bm{v}}}
+\def\vw{{\bm{w}}}
+\def\vx{{\bm{x}}}
+\def\vy{{\bm{y}}}
+\def\vz{{\bm{z}}}
+
+% Elements of vectors
+\def\evalpha{{\alpha}}
+\def\evbeta{{\beta}}
+\def\evepsilon{{\epsilon}}
+\def\evlambda{{\lambda}}
+\def\evomega{{\omega}}
+\def\evmu{{\mu}}
+\def\evpsi{{\psi}}
+\def\evsigma{{\sigma}}
+\def\evtheta{{\theta}}
+\def\evphi{{\phi}}
+\def\evxi{{\xi}}
+\def\eva{{a}}
+\def\evb{{b}}
+\def\evc{{c}}
+\def\evd{{d}}
+\def\eve{{e}}
+\def\evf{{f}}
+\def\evg{{g}}
+\def\evh{{h}}
+\def\evi{{i}}
+\def\evj{{j}}
+\def\evk{{k}}
+\def\evl{{l}}
+\def\evm{{m}}
+\def\evn{{n}}
+\def\evo{{o}}
+\def\evp{{p}}
+\def\evq{{q}}
+\def\evr{{r}}
+\def\evs{{s}}
+\def\evt{{t}}
+\def\evu{{u}}
+\def\evv{{v}}
+\def\evw{{w}}
+\def\evx{{x}}
+\def\evy{{y}}
+\def\evz{{z}}
+
+% Matrix
+\def\mA{{\bm{A}}}
+\def\mB{{\bm{B}}}
+\def\mC{{\bm{C}}}
+\def\mD{{\bm{D}}}
+\def\mE{{\bm{E}}}
+\def\mF{{\bm{F}}}
+\def\mG{{\bm{G}}}
+\def\mH{{\bm{H}}}
+\def\mI{{\bm{I}}}
+\def\mJ{{\bm{J}}}
+\def\mK{{\bm{K}}}
+\def\mL{{\bm{L}}}
+\def\mM{{\bm{M}}}
+\def\mN{{\bm{N}}}
+\def\mO{{\bm{O}}}
+\def\mP{{\bm{P}}}
+\def\mQ{{\bm{Q}}}
+\def\mR{{\bm{R}}}
+\def\mS{{\bm{S}}}
+\def\mT{{\bm{T}}}
+\def\mU{{\bm{U}}}
+\def\mV{{\bm{V}}}
+\def\mW{{\bm{W}}}
+\def\mX{{\bm{X}}}
+\def\mY{{\bm{Y}}}
+\def\mZ{{\bm{Z}}}
+\def\mBeta{{\bm{\beta}}}
+\def\mPi{{\bm{\Pi}}}
+\def\mPhi{{\bm{\Phi}}}
+\def\mPsi{{\bm{\Psi}}}
+\def\mLambda{{\bm{\Lambda}}}
+\def\mSigma{{\bm{\Sigma}}}
+\def\mDelta{{\bm{\Delta}}}
+
+% Tensor
+\DeclareMathAlphabet{\mathsfit}{\encodingdefault}{\sfdefault}{m}{sl}
+\SetMathAlphabet{\mathsfit}{bold}{\encodingdefault}{\sfdefault}{bx}{n}
+\newcommand{\tens}[1]{\bm{\mathsfit{#1}}}
+\def\tA{{\tens{A}}}
+\def\tB{{\tens{B}}}
+\def\tC{{\tens{C}}}
+\def\tD{{\tens{D}}}
+\def\tE{{\tens{E}}}
+\def\tF{{\tens{F}}}
+\def\tG{{\tens{G}}}
+\def\tH{{\tens{H}}}
+\def\tI{{\tens{I}}}
+\def\tJ{{\tens{J}}}
+\def\tK{{\tens{K}}}
+\def\tL{{\tens{L}}}
+\def\tM{{\tens{M}}}
+\def\tN{{\tens{N}}}
+\def\tO{{\tens{O}}}
+\def\tP{{\tens{P}}}
+\def\tQ{{\tens{Q}}}
+\def\tR{{\tens{R}}}
+\def\tS{{\tens{S}}}
+\def\tT{{\tens{T}}}
+\def\tU{{\tens{U}}}
+\def\tV{{\tens{V}}}
+\def\tW{{\tens{W}}}
+\def\tX{{\tens{X}}}
+\def\tY{{\tens{Y}}}
+\def\tZ{{\tens{Z}}}
+
+
+% Graph
+\def\gA{{\mathcal{A}}}
+\def\gB{{\mathcal{B}}}
+\def\gC{{\mathcal{C}}}
+\def\gD{{\mathcal{D}}}
+\def\gE{{\mathcal{E}}}
+\def\gF{{\mathcal{F}}}
+\def\gG{{\mathcal{G}}}
+\def\gH{{\mathcal{H}}}
+\def\gI{{\mathcal{I}}}
+\def\gJ{{\mathcal{J}}}
+\def\gK{{\mathcal{K}}}
+\def\gL{{\mathcal{L}}}
+\def\gM{{\mathcal{M}}}
+\def\gN{{\mathcal{N}}}
+\def\gO{{\mathcal{O}}}
+\def\gP{{\mathcal{P}}}
+\def\gQ{{\mathcal{Q}}}
+\def\gR{{\mathcal{R}}}
+\def\gS{{\mathcal{S}}}
+\def\gT{{\mathcal{T}}}
+\def\gU{{\mathcal{U}}}
+\def\gV{{\mathcal{V}}}
+\def\gW{{\mathcal{W}}}
+\def\gX{{\mathcal{X}}}
+\def\gY{{\mathcal{Y}}}
+\def\gZ{{\mathcal{Z}}}
+
+% Sets
+\def\sA{{\mathbb{A}}}
+\def\sB{{\mathbb{B}}}
+\def\sC{{\mathbb{C}}}
+\def\sD{{\mathbb{D}}}
+% Don't use a set called E, because this would be the same as our symbol
+% for expectation.
+\def\sF{{\mathbb{F}}}
+\def\sG{{\mathbb{G}}}
+\def\sH{{\mathbb{H}}}
+\def\sI{{\mathbb{I}}}
+\def\sJ{{\mathbb{J}}}
+\def\sK{{\mathbb{K}}}
+\def\sL{{\mathbb{L}}}
+\def\sM{{\mathbb{M}}}
+\def\sN{{\mathbb{N}}}
+\def\sO{{\mathbb{O}}}
+\def\sP{{\mathbb{P}}}
+\def\sQ{{\mathbb{Q}}}
+\def\sR{{\mathbb{R}}}
+\def\sS{{\mathbb{S}}}
+\def\sT{{\mathbb{T}}}
+\def\sU{{\mathbb{U}}}
+\def\sV{{\mathbb{V}}}
+\def\sW{{\mathbb{W}}}
+\def\sX{{\mathbb{X}}}
+\def\sY{{\mathbb{Y}}}
+\def\sZ{{\mathbb{Z}}}
+
+% Entries of a matrix
+\def\emLambda{{\Lambda}}
+\def\emA{{A}}
+\def\emB{{B}}
+\def\emC{{C}}
+\def\emD{{D}}
+\def\emE{{E}}
+\def\emF{{F}}
+\def\emG{{G}}
+\def\emH{{H}}
+\def\emI{{I}}
+\def\emJ{{J}}
+\def\emK{{K}}
+\def\emL{{L}}
+\def\emM{{M}}
+\def\emN{{N}}
+\def\emO{{O}}
+\def\emP{{P}}
+\def\emQ{{Q}}
+\def\emR{{R}}
+\def\emS{{S}}
+\def\emT{{T}}
+\def\emU{{U}}
+\def\emV{{V}}
+\def\emW{{W}}
+\def\emX{{X}}
+\def\emY{{Y}}
+\def\emZ{{Z}}
+\def\emSigma{{\Sigma}}
+
+% entries of a tensor
+% Same font as tensor, without \bm wrapper
+\newcommand{\etens}[1]{\mathsfit{#1}}
+\def\etLambda{{\etens{\Lambda}}}
+\def\etA{{\etens{A}}}
+\def\etB{{\etens{B}}}
+\def\etC{{\etens{C}}}
+\def\etD{{\etens{D}}}
+\def\etE{{\etens{E}}}
+\def\etF{{\etens{F}}}
+\def\etG{{\etens{G}}}
+\def\etH{{\etens{H}}}
+\def\etI{{\etens{I}}}
+\def\etJ{{\etens{J}}}
+\def\etK{{\etens{K}}}
+\def\etL{{\etens{L}}}
+\def\etM{{\etens{M}}}
+\def\etN{{\etens{N}}}
+\def\etO{{\etens{O}}}
+\def\etP{{\etens{P}}}
+\def\etQ{{\etens{Q}}}
+\def\etR{{\etens{R}}}
+\def\etS{{\etens{S}}}
+\def\etT{{\etens{T}}}
+\def\etU{{\etens{U}}}
+\def\etV{{\etens{V}}}
+\def\etW{{\etens{W}}}
+\def\etX{{\etens{X}}}
+\def\etY{{\etens{Y}}}
+\def\etZ{{\etens{Z}}}
+
+% The true underlying data generating distribution
+\newcommand{\pdata}{p_{\rm{data}}}
+% The empirical distribution defined by the training set
+\newcommand{\ptrain}{\hat{p}_{\rm{data}}}
+\newcommand{\Ptrain}{\hat{P}_{\rm{data}}}
+% The model distribution
+\newcommand{\pmodel}{p_{\rm{model}}}
+\newcommand{\Pmodel}{P_{\rm{model}}}
+\newcommand{\ptildemodel}{\tilde{p}_{\rm{model}}}
+% Stochastic autoencoder distributions
+\newcommand{\pencode}{p_{\rm{encoder}}}
+\newcommand{\pdecode}{p_{\rm{decoder}}}
+\newcommand{\precons}{p_{\rm{reconstruct}}}
+
+\newcommand{\laplace}{\mathrm{Laplace}} % Laplace distribution
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Ls}{\mathcal{L}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\emp}{\tilde{p}}
+\newcommand{\lr}{\alpha}
+\newcommand{\reg}{\lambda}
+\newcommand{\rect}{\mathrm{rectifier}}
+\newcommand{\softmax}{\mathrm{softmax}}
+\newcommand{\sigmoid}{\sigma}
+\newcommand{\softplus}{\zeta}
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\standarderror}{\mathrm{SE}}
+\newcommand{\Cov}{\mathrm{Cov}}
+% Wolfram Mathworld says $L^2$ is for function spaces and $\ell^2$ is for vectors
+% But then they seem to use $L^2$ for vectors throughout the site, and so does
+% wikipedia.
+\newcommand{\normlzero}{L^0}
+\newcommand{\normlone}{L^1}
+\newcommand{\normltwo}{L^2}
+\newcommand{\normlp}{L^p}
+\newcommand{\normmax}{L^\infty}
+
+\newcommand{\parents}{Pa} % See usage in notation.tex. Chosen to match Daphne's book.
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathOperator{\sign}{sign}
+%\DeclareMathOperator{\Tr}{Tr}
+\let\ab\allowbreak
